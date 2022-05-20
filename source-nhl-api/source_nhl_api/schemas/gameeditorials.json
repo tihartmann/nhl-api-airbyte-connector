@@ -1,0 +1,310 @@
+{
+  "properties": {
+    "title": {
+      "type": "string",
+      "example": "Preview"
+    },
+    "topicList": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "article"
+          },
+          "state": {
+            "type": "string",
+            "example": "A"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2018-02-10T16:57:06-0500"
+          },
+          "id": {
+            "type": "string",
+            "example": "295823824"
+          },
+          "headline": {
+            "type": "string",
+            "example": "Oilers at Sharks preview"
+          },
+          "subhead": {
+            "type": "string",
+            "example": "Backups Montoya, Dell to start for Edmonton, San Jose"
+          },
+          "seoTitle": {
+            "type": "string",
+            "example": "Edmonton Oilers San Jose Sharks game preview"
+          },
+          "seoDescription": {
+            "type": "string",
+            "example": "Backup goaltender Aaron Dell will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games."
+          },
+          "seoKeywords": {
+            "type": "string",
+            "example": "Game preview, Edmonton Oilers, San Jose Sharks, Aaron Dell, Al Montoya, Feb 10"
+          },
+          "slug": {
+            "type": "string",
+            "example": "edmonton-oilers-san-jose-sharks-game-preview"
+          },
+          "commenting": {
+            "type": "boolean"
+          },
+          "tagline": {
+            "type": "string"
+          },
+          "tokenData": {
+            "type": "object",
+            "properties": {
+              "tokenGUID": {
+                "type": "string",
+                "example": "token-EBDA2F0039BF4445D2C91"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "hyperLink",
+                  "playerCard"
+                ]
+              },
+              "id": {
+                "type": "string",
+                "example": "8471709"
+              },
+              "teamId": {
+                "type": "string",
+                "example": "28"
+              },
+              "name": {
+                "type": "string",
+                "example": "Marc-Edouard Vlasic"
+              },
+              "seoName": {
+                "type": "string",
+                "example": "marc-edouard-vlasic"
+              },
+              "href": {
+                "type": "string",
+                "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+              },
+              "hrefMobile": {
+                "type": "string",
+                "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+              }
+            }
+          },
+          "contributor": {
+            "type": "object",
+            "properties": {
+              "contributors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "example": "Eric Gilmore"
+                    },
+                    "twitter": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "source": {
+                "type": "string",
+                "example": "NHL.com Correspondent"
+              }
+            }
+          },
+          "keywordsDisplay": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "bodyParagraphCount",
+                    "bodyWordCount",
+                    "clob_autoTagSkip_playerCards",
+                    "content",
+                    "embeddable",
+                    "gameId",
+                    "language",
+                    "playerId",
+                    "previewParagraphCount",
+                    "primaryTag",
+                    "previewWordCount",
+                    "shareable",
+                    "statsEventId",
+                    "teamFileCode",
+                    "teamId"
+                  ]
+                },
+                "value": {
+                  "type": "string",
+                  "example": "en"
+                },
+                "displayName": {
+                  "type": "string",
+                  "example": "English"
+                }
+              },
+              "$schema": "http://json-schema.org/schema#",
+              "type": "object"
+            }
+          },
+          "keywordsAll": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "bodyParagraphCount",
+                    "bodyWordCount",
+                    "clob_autoTagSkip_playerCards",
+                    "content",
+                    "embeddable",
+                    "gameId",
+                    "language",
+                    "playerId",
+                    "previewParagraphCount",
+                    "primaryTag",
+                    "previewWordCount",
+                    "shareable",
+                    "statsEventId",
+                    "teamFileCode",
+                    "teamId"
+                  ]
+                },
+                "value": {
+                  "type": "string",
+                  "example": "en"
+                },
+                "displayName": {
+                  "type": "string",
+                  "example": "English"
+                }
+              },
+              "$schema": "http://json-schema.org/schema#",
+              "type": "object"
+            }
+          },
+          "approval": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "example": "/news/edmonton-oilers-san-jose-sharks-game-preview/c-295823824?game_pk=2017020851"
+          },
+          "dataURI": {
+            "type": "string",
+            "example": "/nhl/id/v1/295823824/details/web-v1.json"
+          },
+          "primaryKeyword": {
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "bodyParagraphCount",
+                  "bodyWordCount",
+                  "clob_autoTagSkip_playerCards",
+                  "content",
+                  "embeddable",
+                  "gameId",
+                  "language",
+                  "playerId",
+                  "previewParagraphCount",
+                  "primaryTag",
+                  "previewWordCount",
+                  "shareable",
+                  "statsEventId",
+                  "teamFileCode",
+                  "teamId"
+                ]
+              },
+              "value": {
+                "type": "string",
+                "example": "en"
+              },
+              "displayName": {
+                "type": "string",
+                "example": "English"
+              }
+            },
+            "$schema": "http://json-schema.org/schema#",
+            "type": "object"
+          },
+          "media": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "example": "photo"
+              },
+              "image": {
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "altText": {
+                    "type": "string"
+                  },
+                  "cuts": {
+                    "type": "object",
+                    "properties": {
+                      "aspectRatio": {
+                        "type": "string",
+                        "example": "16:9"
+                      },
+                      "width": {
+                        "type": "number",
+                        "example": 2568
+                      },
+                      "height": {
+                        "type": "number",
+                        "example": 1444
+                      },
+                      "src": {
+                        "type": "string",
+                        "format": "url",
+                        "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                      },
+                      "at2x": {
+                        "type": "string",
+                        "format": "url",
+                        "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                      },
+                      "at3x": {
+                        "type": "string",
+                        "format": "url",
+                        "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                      }
+                    }
+                  }
+                },
+                "$schema": "http://json-schema.org/schema#",
+                "type": "object"
+              }
+            }
+          },
+          "preview": {
+            "type": "string",
+            "format": "html",
+            "example": "<p><b>OILERS (23-26-4) at SHARKS (28-18-8)</b></p><p><b>10 p.m. ET; NBCSCA, CITY, SN360, SN, NHL.TV</b></p><p>&nbsp;</p><h5><b>The Game</b></h5><p>Backup goaltender <span class=\"token token-playerCard\" id=\"token-B36CCB71E81996298E792\">Aaron Dell</span> will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games.</p>"
+          }
+        },
+        "$schema": "http://json-schema.org/schema#",
+        "type": "object"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

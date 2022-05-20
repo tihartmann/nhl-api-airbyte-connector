@@ -1,0 +1,50 @@
+{
+  "properties": {
+    "team": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "example": 28
+        },
+        "name": {
+          "type": "string",
+          "example": "San Jose Sharks"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "example": "/api/v1/teams/28"
+        },
+        "abbreviation": {
+          "type": "string",
+          "example": "SJS"
+        },
+        "triCode": {
+          "type": "string",
+          "example": "SJS"
+        }
+      }
+    },
+    "goals": {
+      "type": "number",
+      "example": 6
+    },
+    "shotsOnGoal": {
+      "type": "number",
+      "example": 30
+    },
+    "goaliePulled": {
+      "type": "boolean"
+    },
+    "numSkaters": {
+      "type": "number",
+      "example": 5
+    },
+    "powerPlay": {
+      "type": "boolean"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

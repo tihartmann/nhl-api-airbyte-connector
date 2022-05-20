@@ -1,0 +1,126 @@
+{
+  "properties": {
+    "id": {
+      "type": "number",
+      "example": 8466138
+    },
+    "fullName": {
+      "type": "string",
+      "example": "Joe Thornton"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "example": "/api/v1/people/8466138"
+    },
+    "firstName": {
+      "type": "string",
+      "example": "Joe"
+    },
+    "lastName": {
+      "type": "string",
+      "example": "Thornton"
+    },
+    "primaryNumber": {
+      "type": "string",
+      "example": "19"
+    },
+    "birthDate": {
+      "type": "string",
+      "format": "date",
+      "example": "1979-07-02"
+    },
+    "currentAge": {
+      "type": "number",
+      "example": 38
+    },
+    "birthCity": {
+      "type": "string",
+      "example": "London"
+    },
+    "birthStateProvince": {
+      "type": "string",
+      "example": "ON"
+    },
+    "birthCountry": {
+      "type": "string",
+      "example": "CAN"
+    },
+    "nationality": {
+      "type": "string",
+      "example": "CAN"
+    },
+    "height": {
+      "type": "string",
+      "example": "6' 4\""
+    },
+    "weight": {
+      "type": "number",
+      "example": 220
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "alternateCaptain": {
+      "type": "boolean"
+    },
+    "captain": {
+      "type": "boolean"
+    },
+    "rookie": {
+      "type": "boolean"
+    },
+    "shootsCatches": {
+      "type": "string",
+      "enum": [
+        "L",
+        "R"
+      ]
+    },
+    "rosterStatus": {
+      "type": "string",
+      "example": "I"
+    },
+    "currentTeam": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "example": 28
+        },
+        "name": {
+          "type": "string",
+          "example": "San Jose Sharks"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "example": "/api/v1/teams/28"
+        }
+      }
+    },
+    "primaryPosition": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "example": "C"
+        },
+        "name": {
+          "type": "string",
+          "example": "Center"
+        },
+        "type": {
+          "type": "string",
+          "example": "Forward"
+        },
+        "abbreviation": {
+          "type": "string",
+          "example": "C"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

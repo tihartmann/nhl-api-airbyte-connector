@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "bodyParagraphCount",
+        "bodyWordCount",
+        "clob_autoTagSkip_playerCards",
+        "content",
+        "embeddable",
+        "gameId",
+        "language",
+        "playerId",
+        "previewParagraphCount",
+        "primaryTag",
+        "previewWordCount",
+        "shareable",
+        "statsEventId",
+        "teamFileCode",
+        "teamId"
+      ]
+    },
+    "value": {
+      "type": "string",
+      "example": "en"
+    },
+    "displayName": {
+      "type": "string",
+      "example": "English"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

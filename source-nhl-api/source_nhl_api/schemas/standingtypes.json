@@ -1,0 +1,17 @@
+{
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "example": "regularSeason"
+      },
+      "description": {
+        "type": "string",
+        "example": "Regular Season Standings"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

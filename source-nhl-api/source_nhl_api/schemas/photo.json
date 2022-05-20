@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "altText": {
+      "type": "string"
+    },
+    "cuts": {
+      "type": "object",
+      "properties": {
+        "aspectRatio": {
+          "type": "string",
+          "example": "16:9"
+        },
+        "width": {
+          "type": "number",
+          "example": 2568
+        },
+        "height": {
+          "type": "number",
+          "example": 1444
+        },
+        "src": {
+          "type": "string",
+          "format": "url",
+          "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+        },
+        "at2x": {
+          "type": "string",
+          "format": "url",
+          "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+        },
+        "at3x": {
+          "type": "string",
+          "format": "url",
+          "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

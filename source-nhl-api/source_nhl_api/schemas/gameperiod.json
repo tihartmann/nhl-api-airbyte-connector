@@ -1,0 +1,62 @@
+{
+  "properties": {
+    "periodType": {
+      "type": "string",
+      "example": "REGULAR"
+    },
+    "startTime": {
+      "type": "string",
+      "format": "date-time",
+      "example": "2018-02-11T03:09:50Z"
+    },
+    "endTime": {
+      "type": "string",
+      "format": "date-time",
+      "example": "2018-02-11T03:44:47Z"
+    },
+    "num": {
+      "type": "number",
+      "example": 1
+    },
+    "ordinalNum": {
+      "type": "string",
+      "example": "1st"
+    },
+    "home": {
+      "type": "object",
+      "properties": {
+        "goals": {
+          "type": "number",
+          "example": 2
+        },
+        "shotsOnGoal": {
+          "type": "number",
+          "example": 14
+        },
+        "rinkSide": {
+          "type": "string",
+          "example": "left"
+        }
+      }
+    },
+    "away": {
+      "type": "object",
+      "properties": {
+        "goals": {
+          "type": "number",
+          "example": 0
+        },
+        "shotsOnGoal": {
+          "type": "number",
+          "example": 9
+        },
+        "rinkSide": {
+          "type": "string",
+          "example": "right"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

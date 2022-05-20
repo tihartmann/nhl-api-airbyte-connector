@@ -1,0 +1,48 @@
+{
+    "streams": [
+      {
+        "stream": {
+          "name": "team_rosters",
+          "json_schema": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object"
+          },
+          "supported_sync_modes": ["full_refresh"]
+        },
+        "sync_mode": "full_refresh",
+        "destination_sync_mode": "overwrite"
+      },
+      {
+        "stream": {
+          "name": "players",
+          "json_schema": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object"
+          },
+          "supported_sync_modes": ["full_refresh"]
+        },
+        "sync_mode": "full_refresh",
+        "destination_sync_mode": "overwrite"
+      },
+      {
+        "stream": {
+          "name": "player_stats",
+          "json_schema": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "properties": {
+              "player_id": {
+                "type": "string"
+              },
+              "season": {
+                  "type": "string"
+              }
+            }
+          },
+          "supported_sync_modes": ["full_refresh"]
+        },
+        "sync_mode": "full_refresh",
+        "destination_sync_mode": "overwrite"
+      }
+    ]
+  }

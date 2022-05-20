@@ -1,0 +1,56 @@
+{
+  "properties": {
+    "copyright": {
+      "type": "string"
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 15
+          },
+          "name": {
+            "type": "string",
+            "example": "Pacific"
+          },
+          "link": {
+            "type": "string",
+            "format": "uri",
+            "example": "/api/v1/divisions/15"
+          },
+          "abbreviation": {
+            "type": "string",
+            "example": "P"
+          },
+          "conference": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 5
+              },
+              "name": {
+                "type": "string",
+                "example": "Western"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/conferences/5"
+              }
+            }
+          },
+          "active": {
+            "type": "boolean"
+          }
+        },
+        "$schema": "http://json-schema.org/schema#",
+        "type": "object"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

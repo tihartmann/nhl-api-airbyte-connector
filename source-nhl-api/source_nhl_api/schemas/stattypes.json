@@ -1,0 +1,43 @@
+{
+  "items": {
+    "type": "object",
+    "properties": {
+      "displayName": {
+        "type": "string",
+        "enum": [
+          "byDayOfWeek",
+          "byDayOfWeekPlayoffs",
+          "byMonth",
+          "byMonthPlayoffs",
+          "careerPlayoffs",
+          "careerRegularSeason",
+          "gameLog",
+          "goalsByGameSituation",
+          "goalsByGameSituationPlayoffs",
+          "homeAndAway",
+          "homeAndAwayPlayoffs",
+          "onPaceRegularSeason",
+          "playoffGameLog",
+          "playoffStatRankings",
+          "regularSeasonStatRankings",
+          "statsSingleSeason",
+          "statsSingleSeasonPlayoffs",
+          "vsConference",
+          "vsConferencePlayoffs",
+          "vsDivision",
+          "vsDivisionPlayoffs",
+          "vsTeam",
+          "vsTeamPlayoffs",
+          "winLoss",
+          "winLossPlayoffs",
+          "yearByYear",
+          "yearByYearPlayoffs",
+          "yearByYearPlayoffsRank",
+          "yearByYearRank"
+        ]
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

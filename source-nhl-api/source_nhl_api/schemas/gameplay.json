@@ -1,0 +1,143 @@
+{
+  "properties": {
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "player": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 8476881
+              },
+              "fullName": {
+                "type": "string",
+                "example": "Tomas Hertl"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/people/8476881"
+              }
+            }
+          },
+          "playerType": {
+            "type": "string",
+            "example": "Winner"
+          }
+        }
+      }
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "event": {
+          "type": "string",
+          "example": "Game End"
+        },
+        "eventCode": {
+          "type": "string",
+          "example": "SJS505"
+        },
+        "eventTypeId": {
+          "type": "string",
+          "example": "GAME_END"
+        },
+        "description": {
+          "type": "string",
+          "example": "Game End"
+        }
+      }
+    },
+    "about": {
+      "type": "object",
+      "properties": {
+        "eventIdx": {
+          "type": "number",
+          "example": 315
+        },
+        "eventId": {
+          "type": "number",
+          "example": 505
+        },
+        "period": {
+          "type": "number",
+          "example": 3
+        },
+        "periodType": {
+          "type": "string",
+          "example": "REGULAR"
+        },
+        "ordinalNum": {
+          "type": "string",
+          "example": "3rd"
+        },
+        "periodTime": {
+          "type": "string",
+          "example": "20:00"
+        },
+        "periodTimeRemaining": {
+          "type": "string",
+          "example": "00:00"
+        },
+        "dateTime": {
+          "type": "string",
+          "format": "date-time",
+          "example": "2018-02-11T05:30:42Z"
+        },
+        "goals": {
+          "type": "object",
+          "properties": {
+            "away": {
+              "type": "number",
+              "example": 4
+            },
+            "home": {
+              "type": "number",
+              "example": 6
+            }
+          }
+        }
+      }
+    },
+    "coordinates": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number",
+          "example": 0
+        },
+        "y": {
+          "type": "number",
+          "example": 0
+        }
+      }
+    },
+    "team": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "example": 28
+        },
+        "name": {
+          "type": "string",
+          "example": "San Jose Sharks"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "example": "/api/v1/teams/28"
+        },
+        "triCode": {
+          "type": "string",
+          "example": "SJS"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

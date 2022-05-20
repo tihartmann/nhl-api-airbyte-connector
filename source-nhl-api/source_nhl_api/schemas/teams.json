@@ -1,0 +1,469 @@
+{
+  "properties": {
+    "copyright": {
+      "type": "string"
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "id": {
+            "type": "number",
+            "example": 28
+          },
+          "name": {
+            "type": "string",
+            "example": "San Jose Sharks"
+          },
+          "link": {
+            "type": "string",
+            "format": "uri",
+            "example": "/api/v1/teams/28"
+          },
+          "venue": {
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "SAP Center at San Jose"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/venues/null"
+              },
+              "city": {
+                "type": "string",
+                "example": "San Jose"
+              },
+              "timeZone": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "example": "America/Los_Angeles"
+                  },
+                  "offset": {
+                    "type": "number",
+                    "example": -8
+                  },
+                  "tz": {
+                    "type": "string",
+                    "example": "PST"
+                  }
+                }
+              }
+            },
+            "$schema": "http://json-schema.org/schema#",
+            "type": "object"
+          },
+          "abbreviation": {
+            "type": "string",
+            "example": "SJS"
+          },
+          "triCode": {
+            "type": "string",
+            "example": "SJS"
+          },
+          "teamName": {
+            "type": "string",
+            "example": "Sharks"
+          },
+          "locationName": {
+            "type": "string",
+            "example": "San Jose"
+          },
+          "firstYearOfPlay": {
+            "type": "number",
+            "example": 1990
+          },
+          "division": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 15
+              },
+              "name": {
+                "type": "string",
+                "example": "Pacific"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/divisions/15"
+              }
+            }
+          },
+          "conference": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 5
+              },
+              "name": {
+                "type": "string",
+                "example": "Western"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/conferences/5"
+              }
+            }
+          },
+          "franchise": {
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 29
+              },
+              "name": {
+                "type": "string",
+                "example": "Sharks"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/franchises/29"
+              }
+            },
+            "$schema": "http://json-schema.org/schema#",
+            "type": "object"
+          },
+          "roster": {
+            "type": "object",
+            "properties": {
+              "roster": {
+                "type": "array",
+                "items": {
+                  "properties": {
+                    "person": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "number",
+                          "example": 8466138
+                        },
+                        "fullName": {
+                          "type": "string",
+                          "example": "Joe Thornton"
+                        },
+                        "link": {
+                          "type": "string",
+                          "format": "uri",
+                          "example": "/api/v1/people/8466138"
+                        }
+                      }
+                    },
+                    "jerseyNumber": {
+                      "type": "number",
+                      "example": 19
+                    },
+                    "position": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string",
+                          "example": "C"
+                        },
+                        "name": {
+                          "type": "string",
+                          "example": "Center"
+                        },
+                        "type": {
+                          "type": "string",
+                          "example": "Forward"
+                        },
+                        "abbreviation": {
+                          "type": "string",
+                          "example": "C"
+                        }
+                      }
+                    }
+                  },
+                  "$schema": "http://json-schema.org/schema#",
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "nextGameSchedule": {
+            "type": "object",
+            "properties": {
+              "totalItems": {
+                "type": "number",
+                "example": 1
+              },
+              "totalEvents": {
+                "type": "number",
+                "example": 0
+              },
+              "totalGames": {
+                "type": "number",
+                "example": 1
+              },
+              "totalMatches": {
+                "type": "number",
+                "example": 0
+              },
+              "dates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "date": {
+                      "type": "string",
+                      "format": "date",
+                      "example": "2018-02-10"
+                    },
+                    "totalItems": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "totalEvents": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "totalGames": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "totalMatches": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "games": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "gamePk": {
+                            "type": "number",
+                            "example": 2017020851
+                          },
+                          "link": {
+                            "type": "string",
+                            "format": "uri",
+                            "example": "/api/v1/game/2017020851/feed/live"
+                          },
+                          "gameType": {
+                            "type": "string",
+                            "example": "R"
+                          },
+                          "season": {
+                            "type": "string",
+                            "example": "20172018"
+                          },
+                          "gameDate": {
+                            "type": "string",
+                            "format": "date-time",
+                            "example": "2018-02-11T03:00:00Z"
+                          },
+                          "status": {
+                            "type": "object",
+                            "properties": {
+                              "abstractGameState": {
+                                "type": "string",
+                                "enum": [
+                                  "Live",
+                                  "Preview"
+                                ]
+                              },
+                              "codedGameState": {
+                                "type": "string",
+                                "enum": [
+                                  "2",
+                                  "3"
+                                ],
+                                "example": "3"
+                              },
+                              "detailedState": {
+                                "type": "string",
+                                "enum": [
+                                  "In Progress",
+                                  "Pre-Game"
+                                ]
+                              },
+                              "statusCode": {
+                                "type": "string",
+                                "enum": [
+                                  "2",
+                                  "3"
+                                ]
+                              },
+                              "startTimeTBD": {
+                                "type": "boolean"
+                              }
+                            }
+                          },
+                          "teams": {
+                            "type": "object",
+                            "properties": {
+                              "away": {
+                                "type": "object",
+                                "properties": {
+                                  "leagueRecord": {
+                                    "type": "object",
+                                    "properties": {
+                                      "wins": {
+                                        "type": "number",
+                                        "example": 23
+                                      },
+                                      "losses": {
+                                        "type": "number",
+                                        "example": 26
+                                      },
+                                      "ot": {
+                                        "type": "number",
+                                        "example": 4
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "example": "league"
+                                      }
+                                    }
+                                  },
+                                  "score": {
+                                    "type": "number",
+                                    "example": 0
+                                  },
+                                  "team": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "number",
+                                        "example": 22
+                                      },
+                                      "name": {
+                                        "type": "string",
+                                        "example": "Edmonton Oilers"
+                                      },
+                                      "link": {
+                                        "type": "string",
+                                        "format": "uri",
+                                        "example": "/api/v1/teams/22"
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "home": {
+                                "type": "object",
+                                "properties": {
+                                  "leagueRecord": {
+                                    "type": "object",
+                                    "properties": {
+                                      "wins": {
+                                        "type": "number",
+                                        "example": 28
+                                      },
+                                      "losses": {
+                                        "type": "number",
+                                        "example": 18
+                                      },
+                                      "ot": {
+                                        "type": "number",
+                                        "example": 8
+                                      },
+                                      "type": {
+                                        "type": "string",
+                                        "example": "league"
+                                      }
+                                    }
+                                  },
+                                  "score": {
+                                    "type": "number",
+                                    "example": 2
+                                  },
+                                  "team": {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "number",
+                                        "example": 28
+                                      },
+                                      "name": {
+                                        "type": "string",
+                                        "example": "San Jose Sharks"
+                                      },
+                                      "link": {
+                                        "type": "string",
+                                        "format": "uri",
+                                        "example": "/api/v1/teams/28"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "venue": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string",
+                                "example": "SAP Center at San Jose"
+                              },
+                              "link": {
+                                "type": "string",
+                                "format": "uri",
+                                "example": "/api/v1/venues/null"
+                              }
+                            }
+                          },
+                          "content": {
+                            "type": "object",
+                            "properties": {
+                              "link": {
+                                "type": "string",
+                                "format": "uri",
+                                "example": "/api/v1/game/2017020851/content"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "events": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    },
+                    "matches": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "shortName": {
+            "type": "string",
+            "example": "San Jose"
+          },
+          "officialSiteUrl": {
+            "type": "string",
+            "format": "url",
+            "example": "http://www.sjsharks.com"
+          },
+          "franchiseId": {
+            "type": "number",
+            "example": 29
+          },
+          "active": {
+            "type": "boolean"
+          }
+        },
+        "$schema": "http://json-schema.org/schema#",
+        "type": "object"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

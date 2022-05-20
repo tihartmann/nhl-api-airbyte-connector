@@ -1,0 +1,2240 @@
+{
+  "properties": {
+    "copyright": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "example": "/api/v1/game/2017020851/content"
+    },
+    "editorial": {
+      "type": "object",
+      "properties": {
+        "preview": {
+          "properties": {
+            "title": {
+              "type": "string",
+              "example": "Preview"
+            },
+            "topicList": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "article"
+                  },
+                  "state": {
+                    "type": "string",
+                    "example": "A"
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date-time",
+                    "example": "2018-02-10T16:57:06-0500"
+                  },
+                  "id": {
+                    "type": "string",
+                    "example": "295823824"
+                  },
+                  "headline": {
+                    "type": "string",
+                    "example": "Oilers at Sharks preview"
+                  },
+                  "subhead": {
+                    "type": "string",
+                    "example": "Backups Montoya, Dell to start for Edmonton, San Jose"
+                  },
+                  "seoTitle": {
+                    "type": "string",
+                    "example": "Edmonton Oilers San Jose Sharks game preview"
+                  },
+                  "seoDescription": {
+                    "type": "string",
+                    "example": "Backup goaltender Aaron Dell will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games."
+                  },
+                  "seoKeywords": {
+                    "type": "string",
+                    "example": "Game preview, Edmonton Oilers, San Jose Sharks, Aaron Dell, Al Montoya, Feb 10"
+                  },
+                  "slug": {
+                    "type": "string",
+                    "example": "edmonton-oilers-san-jose-sharks-game-preview"
+                  },
+                  "commenting": {
+                    "type": "boolean"
+                  },
+                  "tagline": {
+                    "type": "string"
+                  },
+                  "tokenData": {
+                    "type": "object",
+                    "properties": {
+                      "tokenGUID": {
+                        "type": "string",
+                        "example": "token-EBDA2F0039BF4445D2C91"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "hyperLink",
+                          "playerCard"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "8471709"
+                      },
+                      "teamId": {
+                        "type": "string",
+                        "example": "28"
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Marc-Edouard Vlasic"
+                      },
+                      "seoName": {
+                        "type": "string",
+                        "example": "marc-edouard-vlasic"
+                      },
+                      "href": {
+                        "type": "string",
+                        "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+                      },
+                      "hrefMobile": {
+                        "type": "string",
+                        "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+                      }
+                    }
+                  },
+                  "contributor": {
+                    "type": "object",
+                    "properties": {
+                      "contributors": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "example": "Eric Gilmore"
+                            },
+                            "twitter": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "source": {
+                        "type": "string",
+                        "example": "NHL.com Correspondent"
+                      }
+                    }
+                  },
+                  "keywordsDisplay": {
+                    "type": "array",
+                    "items": {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "bodyParagraphCount",
+                            "bodyWordCount",
+                            "clob_autoTagSkip_playerCards",
+                            "content",
+                            "embeddable",
+                            "gameId",
+                            "language",
+                            "playerId",
+                            "previewParagraphCount",
+                            "primaryTag",
+                            "previewWordCount",
+                            "shareable",
+                            "statsEventId",
+                            "teamFileCode",
+                            "teamId"
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "example": "en"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "example": "English"
+                        }
+                      },
+                      "$schema": "http://json-schema.org/schema#",
+                      "type": "object"
+                    }
+                  },
+                  "keywordsAll": {
+                    "type": "array",
+                    "items": {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "bodyParagraphCount",
+                            "bodyWordCount",
+                            "clob_autoTagSkip_playerCards",
+                            "content",
+                            "embeddable",
+                            "gameId",
+                            "language",
+                            "playerId",
+                            "previewParagraphCount",
+                            "primaryTag",
+                            "previewWordCount",
+                            "shareable",
+                            "statsEventId",
+                            "teamFileCode",
+                            "teamId"
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "example": "en"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "example": "English"
+                        }
+                      },
+                      "$schema": "http://json-schema.org/schema#",
+                      "type": "object"
+                    }
+                  },
+                  "approval": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "example": "/news/edmonton-oilers-san-jose-sharks-game-preview/c-295823824?game_pk=2017020851"
+                  },
+                  "dataURI": {
+                    "type": "string",
+                    "example": "/nhl/id/v1/295823824/details/web-v1.json"
+                  },
+                  "primaryKeyword": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "bodyParagraphCount",
+                          "bodyWordCount",
+                          "clob_autoTagSkip_playerCards",
+                          "content",
+                          "embeddable",
+                          "gameId",
+                          "language",
+                          "playerId",
+                          "previewParagraphCount",
+                          "primaryTag",
+                          "previewWordCount",
+                          "shareable",
+                          "statsEventId",
+                          "teamFileCode",
+                          "teamId"
+                        ]
+                      },
+                      "value": {
+                        "type": "string",
+                        "example": "en"
+                      },
+                      "displayName": {
+                        "type": "string",
+                        "example": "English"
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  },
+                  "media": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "example": "photo"
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "preview": {
+                    "type": "string",
+                    "format": "html",
+                    "example": "<p><b>OILERS (23-26-4) at SHARKS (28-18-8)</b></p><p><b>10 p.m. ET; NBCSCA, CITY, SN360, SN, NHL.TV</b></p><p>&nbsp;</p><h5><b>The Game</b></h5><p>Backup goaltender <span class=\"token token-playerCard\" id=\"token-B36CCB71E81996298E792\">Aaron Dell</span> will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games.</p>"
+                  }
+                },
+                "$schema": "http://json-schema.org/schema#",
+                "type": "object"
+              }
+            }
+          },
+          "$schema": "http://json-schema.org/schema#",
+          "type": "object"
+        },
+        "articles": {
+          "properties": {
+            "title": {
+              "type": "string",
+              "example": "Preview"
+            },
+            "topicList": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "article"
+                  },
+                  "state": {
+                    "type": "string",
+                    "example": "A"
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date-time",
+                    "example": "2018-02-10T16:57:06-0500"
+                  },
+                  "id": {
+                    "type": "string",
+                    "example": "295823824"
+                  },
+                  "headline": {
+                    "type": "string",
+                    "example": "Oilers at Sharks preview"
+                  },
+                  "subhead": {
+                    "type": "string",
+                    "example": "Backups Montoya, Dell to start for Edmonton, San Jose"
+                  },
+                  "seoTitle": {
+                    "type": "string",
+                    "example": "Edmonton Oilers San Jose Sharks game preview"
+                  },
+                  "seoDescription": {
+                    "type": "string",
+                    "example": "Backup goaltender Aaron Dell will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games."
+                  },
+                  "seoKeywords": {
+                    "type": "string",
+                    "example": "Game preview, Edmonton Oilers, San Jose Sharks, Aaron Dell, Al Montoya, Feb 10"
+                  },
+                  "slug": {
+                    "type": "string",
+                    "example": "edmonton-oilers-san-jose-sharks-game-preview"
+                  },
+                  "commenting": {
+                    "type": "boolean"
+                  },
+                  "tagline": {
+                    "type": "string"
+                  },
+                  "tokenData": {
+                    "type": "object",
+                    "properties": {
+                      "tokenGUID": {
+                        "type": "string",
+                        "example": "token-EBDA2F0039BF4445D2C91"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "hyperLink",
+                          "playerCard"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "8471709"
+                      },
+                      "teamId": {
+                        "type": "string",
+                        "example": "28"
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Marc-Edouard Vlasic"
+                      },
+                      "seoName": {
+                        "type": "string",
+                        "example": "marc-edouard-vlasic"
+                      },
+                      "href": {
+                        "type": "string",
+                        "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+                      },
+                      "hrefMobile": {
+                        "type": "string",
+                        "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+                      }
+                    }
+                  },
+                  "contributor": {
+                    "type": "object",
+                    "properties": {
+                      "contributors": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "example": "Eric Gilmore"
+                            },
+                            "twitter": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "source": {
+                        "type": "string",
+                        "example": "NHL.com Correspondent"
+                      }
+                    }
+                  },
+                  "keywordsDisplay": {
+                    "type": "array",
+                    "items": {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "bodyParagraphCount",
+                            "bodyWordCount",
+                            "clob_autoTagSkip_playerCards",
+                            "content",
+                            "embeddable",
+                            "gameId",
+                            "language",
+                            "playerId",
+                            "previewParagraphCount",
+                            "primaryTag",
+                            "previewWordCount",
+                            "shareable",
+                            "statsEventId",
+                            "teamFileCode",
+                            "teamId"
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "example": "en"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "example": "English"
+                        }
+                      },
+                      "$schema": "http://json-schema.org/schema#",
+                      "type": "object"
+                    }
+                  },
+                  "keywordsAll": {
+                    "type": "array",
+                    "items": {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "bodyParagraphCount",
+                            "bodyWordCount",
+                            "clob_autoTagSkip_playerCards",
+                            "content",
+                            "embeddable",
+                            "gameId",
+                            "language",
+                            "playerId",
+                            "previewParagraphCount",
+                            "primaryTag",
+                            "previewWordCount",
+                            "shareable",
+                            "statsEventId",
+                            "teamFileCode",
+                            "teamId"
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "example": "en"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "example": "English"
+                        }
+                      },
+                      "$schema": "http://json-schema.org/schema#",
+                      "type": "object"
+                    }
+                  },
+                  "approval": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "example": "/news/edmonton-oilers-san-jose-sharks-game-preview/c-295823824?game_pk=2017020851"
+                  },
+                  "dataURI": {
+                    "type": "string",
+                    "example": "/nhl/id/v1/295823824/details/web-v1.json"
+                  },
+                  "primaryKeyword": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "bodyParagraphCount",
+                          "bodyWordCount",
+                          "clob_autoTagSkip_playerCards",
+                          "content",
+                          "embeddable",
+                          "gameId",
+                          "language",
+                          "playerId",
+                          "previewParagraphCount",
+                          "primaryTag",
+                          "previewWordCount",
+                          "shareable",
+                          "statsEventId",
+                          "teamFileCode",
+                          "teamId"
+                        ]
+                      },
+                      "value": {
+                        "type": "string",
+                        "example": "en"
+                      },
+                      "displayName": {
+                        "type": "string",
+                        "example": "English"
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  },
+                  "media": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "example": "photo"
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "preview": {
+                    "type": "string",
+                    "format": "html",
+                    "example": "<p><b>OILERS (23-26-4) at SHARKS (28-18-8)</b></p><p><b>10 p.m. ET; NBCSCA, CITY, SN360, SN, NHL.TV</b></p><p>&nbsp;</p><h5><b>The Game</b></h5><p>Backup goaltender <span class=\"token token-playerCard\" id=\"token-B36CCB71E81996298E792\">Aaron Dell</span> will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games.</p>"
+                  }
+                },
+                "$schema": "http://json-schema.org/schema#",
+                "type": "object"
+              }
+            }
+          },
+          "$schema": "http://json-schema.org/schema#",
+          "type": "object"
+        },
+        "recap": {
+          "properties": {
+            "title": {
+              "type": "string",
+              "example": "Preview"
+            },
+            "topicList": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "example": "article"
+                  },
+                  "state": {
+                    "type": "string",
+                    "example": "A"
+                  },
+                  "date": {
+                    "type": "string",
+                    "format": "date-time",
+                    "example": "2018-02-10T16:57:06-0500"
+                  },
+                  "id": {
+                    "type": "string",
+                    "example": "295823824"
+                  },
+                  "headline": {
+                    "type": "string",
+                    "example": "Oilers at Sharks preview"
+                  },
+                  "subhead": {
+                    "type": "string",
+                    "example": "Backups Montoya, Dell to start for Edmonton, San Jose"
+                  },
+                  "seoTitle": {
+                    "type": "string",
+                    "example": "Edmonton Oilers San Jose Sharks game preview"
+                  },
+                  "seoDescription": {
+                    "type": "string",
+                    "example": "Backup goaltender Aaron Dell will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games."
+                  },
+                  "seoKeywords": {
+                    "type": "string",
+                    "example": "Game preview, Edmonton Oilers, San Jose Sharks, Aaron Dell, Al Montoya, Feb 10"
+                  },
+                  "slug": {
+                    "type": "string",
+                    "example": "edmonton-oilers-san-jose-sharks-game-preview"
+                  },
+                  "commenting": {
+                    "type": "boolean"
+                  },
+                  "tagline": {
+                    "type": "string"
+                  },
+                  "tokenData": {
+                    "type": "object",
+                    "properties": {
+                      "tokenGUID": {
+                        "type": "string",
+                        "example": "token-EBDA2F0039BF4445D2C91"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "hyperLink",
+                          "playerCard"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "8471709"
+                      },
+                      "teamId": {
+                        "type": "string",
+                        "example": "28"
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Marc-Edouard Vlasic"
+                      },
+                      "seoName": {
+                        "type": "string",
+                        "example": "marc-edouard-vlasic"
+                      },
+                      "href": {
+                        "type": "string",
+                        "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+                      },
+                      "hrefMobile": {
+                        "type": "string",
+                        "example": "https://www.nhl.com/player/keegan-lowe-8476397?season=20172018"
+                      }
+                    }
+                  },
+                  "contributor": {
+                    "type": "object",
+                    "properties": {
+                      "contributors": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "example": "Eric Gilmore"
+                            },
+                            "twitter": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      },
+                      "source": {
+                        "type": "string",
+                        "example": "NHL.com Correspondent"
+                      }
+                    }
+                  },
+                  "keywordsDisplay": {
+                    "type": "array",
+                    "items": {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "bodyParagraphCount",
+                            "bodyWordCount",
+                            "clob_autoTagSkip_playerCards",
+                            "content",
+                            "embeddable",
+                            "gameId",
+                            "language",
+                            "playerId",
+                            "previewParagraphCount",
+                            "primaryTag",
+                            "previewWordCount",
+                            "shareable",
+                            "statsEventId",
+                            "teamFileCode",
+                            "teamId"
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "example": "en"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "example": "English"
+                        }
+                      },
+                      "$schema": "http://json-schema.org/schema#",
+                      "type": "object"
+                    }
+                  },
+                  "keywordsAll": {
+                    "type": "array",
+                    "items": {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "bodyParagraphCount",
+                            "bodyWordCount",
+                            "clob_autoTagSkip_playerCards",
+                            "content",
+                            "embeddable",
+                            "gameId",
+                            "language",
+                            "playerId",
+                            "previewParagraphCount",
+                            "primaryTag",
+                            "previewWordCount",
+                            "shareable",
+                            "statsEventId",
+                            "teamFileCode",
+                            "teamId"
+                          ]
+                        },
+                        "value": {
+                          "type": "string",
+                          "example": "en"
+                        },
+                        "displayName": {
+                          "type": "string",
+                          "example": "English"
+                        }
+                      },
+                      "$schema": "http://json-schema.org/schema#",
+                      "type": "object"
+                    }
+                  },
+                  "approval": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string",
+                    "example": "/news/edmonton-oilers-san-jose-sharks-game-preview/c-295823824?game_pk=2017020851"
+                  },
+                  "dataURI": {
+                    "type": "string",
+                    "example": "/nhl/id/v1/295823824/details/web-v1.json"
+                  },
+                  "primaryKeyword": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "bodyParagraphCount",
+                          "bodyWordCount",
+                          "clob_autoTagSkip_playerCards",
+                          "content",
+                          "embeddable",
+                          "gameId",
+                          "language",
+                          "playerId",
+                          "previewParagraphCount",
+                          "primaryTag",
+                          "previewWordCount",
+                          "shareable",
+                          "statsEventId",
+                          "teamFileCode",
+                          "teamId"
+                        ]
+                      },
+                      "value": {
+                        "type": "string",
+                        "example": "en"
+                      },
+                      "displayName": {
+                        "type": "string",
+                        "example": "English"
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  },
+                  "media": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "example": "photo"
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "preview": {
+                    "type": "string",
+                    "format": "html",
+                    "example": "<p><b>OILERS (23-26-4) at SHARKS (28-18-8)</b></p><p><b>10 p.m. ET; NBCSCA, CITY, SN360, SN, NHL.TV</b></p><p>&nbsp;</p><h5><b>The Game</b></h5><p>Backup goaltender <span class=\"token token-playerCard\" id=\"token-B36CCB71E81996298E792\">Aaron Dell</span> will make his 19th start of the season when the San Jose Sharks play the Edmonton Oilers at SAP Center on Saturday in the first of back-to-back games.</p>"
+                  }
+                },
+                "$schema": "http://json-schema.org/schema#",
+                "type": "object"
+              }
+            }
+          },
+          "$schema": "http://json-schema.org/schema#",
+          "type": "object"
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "properties": {
+        "epg": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "anyOf": [
+              {
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "NHLTV"
+                  },
+                  "platform": {
+                    "type": "string",
+                    "example": "web"
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "guid": {
+                          "type": "string",
+                          "example": "dbb39fa8-6679-4b22-a8c5-71eb5e39b462"
+                        },
+                        "mediaState": {
+                          "type": "string",
+                          "example": "MEDIA_ARCHIVE"
+                        },
+                        "mediaPlaybackId": {
+                          "type": "string",
+                          "example": "57463703"
+                        },
+                        "mediaFeedType": {
+                          "type": "string",
+                          "example": "HOME"
+                        },
+                        "callLetters": {
+                          "type": "string",
+                          "example": "NBCS-CA"
+                        },
+                        "eventId": {
+                          "type": "string",
+                          "example": "221-1007449"
+                        },
+                        "language": {
+                          "type": "string",
+                          "example": "eng"
+                        },
+                        "freeGame": {
+                          "type": "boolean"
+                        },
+                        "feedName": {
+                          "type": "string"
+                        },
+                        "gamePlus": {
+                          "type": "boolean"
+                        }
+                      }
+                    }
+                  }
+                },
+                "$schema": "http://json-schema.org/schema#",
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "Audio"
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "mediaState": {
+                          "type": "string",
+                          "example": "MEDIA_DONE"
+                        },
+                        "mediaPlaybackId": {
+                          "type": "string",
+                          "example": "57463903"
+                        },
+                        "mediaFeedType": {
+                          "type": "string",
+                          "example": "HOME"
+                        },
+                        "callLetters": {
+                          "type": "string",
+                          "example": "KFOX"
+                        },
+                        "eventId": {
+                          "type": "string",
+                          "example": "221-1007449"
+                        },
+                        "language": {
+                          "type": "string",
+                          "example": "eng"
+                        },
+                        "freeGame": {
+                          "type": "boolean"
+                        },
+                        "feedName": {
+                          "type": "string"
+                        },
+                        "gamePlus": {
+                          "type": "boolean"
+                        }
+                      }
+                    }
+                  }
+                },
+                "$schema": "http://json-schema.org/schema#",
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "Highlights"
+                  },
+                  "topicList": {
+                    "type": "string",
+                    "example": "293642378"
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "video"
+                          ]
+                        },
+                        "id": {
+                          "type": "string",
+                          "example": "57602103"
+                        },
+                        "date": {
+                          "type": "string",
+                          "format": "date-time",
+                          "example": "2018-02-10T22:00:00-0500"
+                        },
+                        "title": {
+                          "type": "string",
+                          "example": "Goodrow buries Hansen's pass"
+                        },
+                        "blurb": {
+                          "type": "string",
+                          "example": "EDM@SJS: Goodrow snaps Hansen's pass by Montoya"
+                        },
+                        "description": {
+                          "type": "string",
+                          "example": "Barclay Goodrow takes a drop pass from Jannik Hansen and whips a quick wrist shot past Al Montoya to give the Sharks a 3-0 lead in the 2nd"
+                        },
+                        "duration": {
+                          "type": "string",
+                          "example": "00:51"
+                        },
+                        "authFlow": {
+                          "type": "boolean"
+                        },
+                        "mediaPlaybackId": {
+                          "type": "string",
+                          "example": "57602103"
+                        },
+                        "mediaState": {
+                          "type": "string",
+                          "example": "MEDIA_ARCHIVE"
+                        },
+                        "keywords": {
+                          "type": "array",
+                          "items": {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "bodyParagraphCount",
+                                  "bodyWordCount",
+                                  "clob_autoTagSkip_playerCards",
+                                  "content",
+                                  "embeddable",
+                                  "gameId",
+                                  "language",
+                                  "playerId",
+                                  "previewParagraphCount",
+                                  "primaryTag",
+                                  "previewWordCount",
+                                  "shareable",
+                                  "statsEventId",
+                                  "teamFileCode",
+                                  "teamId"
+                                ]
+                              },
+                              "value": {
+                                "type": "string",
+                                "example": "en"
+                              },
+                              "displayName": {
+                                "type": "string",
+                                "example": "English"
+                              }
+                            },
+                            "$schema": "http://json-schema.org/schema#",
+                            "type": "object"
+                          }
+                        },
+                        "image": {
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "altText": {
+                              "type": "string"
+                            },
+                            "cuts": {
+                              "type": "object",
+                              "properties": {
+                                "aspectRatio": {
+                                  "type": "string",
+                                  "example": "16:9"
+                                },
+                                "width": {
+                                  "type": "number",
+                                  "example": 2568
+                                },
+                                "height": {
+                                  "type": "number",
+                                  "example": 1444
+                                },
+                                "src": {
+                                  "type": "string",
+                                  "format": "url",
+                                  "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                                },
+                                "at2x": {
+                                  "type": "string",
+                                  "format": "url",
+                                  "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                                },
+                                "at3x": {
+                                  "type": "string",
+                                  "format": "url",
+                                  "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                                }
+                              }
+                            }
+                          },
+                          "$schema": "http://json-schema.org/schema#",
+                          "type": "object"
+                        },
+                        "playbacks": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string",
+                                "enum": [
+                                  "FLASH_192K_320X180",
+                                  "FLASH_450K_400X224",
+                                  "FLASH_1200K_640X360",
+                                  "FLASH_1800K_960X540",
+                                  "HTTP_CLOUD_MOBILE",
+                                  "HTTP_CLOUD_TABLET",
+                                  "HTTP_CLOUD_TABLET_60",
+                                  "HTTP_CLOUD_WIRED",
+                                  "HTTP_CLOUD_WIRED_60",
+                                  "HTTP_CLOUD_WIRED_WEB"
+                                ]
+                              },
+                              "width": {
+                                "type": "string",
+                                "example": "960"
+                              },
+                              "height": {
+                                "type": "string",
+                                "example": "540"
+                              },
+                              "url": {
+                                "type": "string",
+                                "format": "video",
+                                "example": "http://md-akc.med.nhl.com/mp4/nhl/2018/02/11/ddec1fcc-3772-4769-a547-314de76c6c11/1518322152840/asset_1800k.mp4"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "$schema": "http://json-schema.org/schema#",
+                      "type": "object"
+                    }
+                  }
+                },
+                "$schema": "http://json-schema.org/schema#",
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "milestones": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "enum": [
+                "Milestones"
+              ]
+            },
+            "streamStart": {
+              "type": "string",
+              "format": "date-time",
+              "example": "2018-02-11T03:04:32+0000"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "Broadcast Start"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "Broadcast Start"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "BROADCAST_START",
+                      "BROADCAST_END",
+                      "GOAL",
+                      "PERIOD_END",
+                      "PERIOD_START",
+                      "SHOT"
+                    ]
+                  },
+                  "timeAbsolute": {
+                    "type": "string",
+                    "format": "date-time",
+                    "example": "2018-02-11T03:04:36+0000"
+                  },
+                  "timeOffset": {
+                    "type": "string",
+                    "example": "4"
+                  },
+                  "period": {
+                    "type": "string",
+                    "example": "1"
+                  },
+                  "statsEventId": {
+                    "type": "string",
+                    "example": "10"
+                  },
+                  "teamId": {
+                    "type": "string",
+                    "example": "28"
+                  },
+                  "playerId": {
+                    "type": "string",
+                    "example": "8477046"
+                  },
+                  "periodTime": {
+                    "type": "string",
+                    "example": "01:15"
+                  },
+                  "ordinalNum": {
+                    "type": "string",
+                    "example": "1st"
+                  },
+                  "highlight": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "video"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2018-02-10T22:00:00-0500"
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "Goodrow buries Hansen's pass"
+                      },
+                      "blurb": {
+                        "type": "string",
+                        "example": "EDM@SJS: Goodrow snaps Hansen's pass by Montoya"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Barclay Goodrow takes a drop pass from Jannik Hansen and whips a quick wrist shot past Al Montoya to give the Sharks a 3-0 lead in the 2nd"
+                      },
+                      "duration": {
+                        "type": "string",
+                        "example": "00:51"
+                      },
+                      "authFlow": {
+                        "type": "boolean"
+                      },
+                      "mediaPlaybackId": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "mediaState": {
+                        "type": "string",
+                        "example": "MEDIA_ARCHIVE"
+                      },
+                      "keywords": {
+                        "type": "array",
+                        "items": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "bodyParagraphCount",
+                                "bodyWordCount",
+                                "clob_autoTagSkip_playerCards",
+                                "content",
+                                "embeddable",
+                                "gameId",
+                                "language",
+                                "playerId",
+                                "previewParagraphCount",
+                                "primaryTag",
+                                "previewWordCount",
+                                "shareable",
+                                "statsEventId",
+                                "teamFileCode",
+                                "teamId"
+                              ]
+                            },
+                            "value": {
+                              "type": "string",
+                              "example": "en"
+                            },
+                            "displayName": {
+                              "type": "string",
+                              "example": "English"
+                            }
+                          },
+                          "$schema": "http://json-schema.org/schema#",
+                          "type": "object"
+                        }
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      },
+                      "playbacks": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "enum": [
+                                "FLASH_192K_320X180",
+                                "FLASH_450K_400X224",
+                                "FLASH_1200K_640X360",
+                                "FLASH_1800K_960X540",
+                                "HTTP_CLOUD_MOBILE",
+                                "HTTP_CLOUD_TABLET",
+                                "HTTP_CLOUD_TABLET_60",
+                                "HTTP_CLOUD_WIRED",
+                                "HTTP_CLOUD_WIRED_60",
+                                "HTTP_CLOUD_WIRED_WEB"
+                              ]
+                            },
+                            "width": {
+                              "type": "string",
+                              "example": "960"
+                            },
+                            "height": {
+                              "type": "string",
+                              "example": "540"
+                            },
+                            "url": {
+                              "type": "string",
+                              "format": "video",
+                              "example": "http://md-akc.med.nhl.com/mp4/nhl/2018/02/11/ddec1fcc-3772-4769-a547-314de76c6c11/1518322152840/asset_1800k.mp4"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "highlights": {
+      "type": "object",
+      "properties": {
+        "scoreboard": {
+          "properties": {
+            "scoreboard": {
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "example": "Highlights"
+                },
+                "topicList": {
+                  "type": "string",
+                  "example": "293642378"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "video"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2018-02-10T22:00:00-0500"
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "Goodrow buries Hansen's pass"
+                      },
+                      "blurb": {
+                        "type": "string",
+                        "example": "EDM@SJS: Goodrow snaps Hansen's pass by Montoya"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Barclay Goodrow takes a drop pass from Jannik Hansen and whips a quick wrist shot past Al Montoya to give the Sharks a 3-0 lead in the 2nd"
+                      },
+                      "duration": {
+                        "type": "string",
+                        "example": "00:51"
+                      },
+                      "authFlow": {
+                        "type": "boolean"
+                      },
+                      "mediaPlaybackId": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "mediaState": {
+                        "type": "string",
+                        "example": "MEDIA_ARCHIVE"
+                      },
+                      "keywords": {
+                        "type": "array",
+                        "items": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "bodyParagraphCount",
+                                "bodyWordCount",
+                                "clob_autoTagSkip_playerCards",
+                                "content",
+                                "embeddable",
+                                "gameId",
+                                "language",
+                                "playerId",
+                                "previewParagraphCount",
+                                "primaryTag",
+                                "previewWordCount",
+                                "shareable",
+                                "statsEventId",
+                                "teamFileCode",
+                                "teamId"
+                              ]
+                            },
+                            "value": {
+                              "type": "string",
+                              "example": "en"
+                            },
+                            "displayName": {
+                              "type": "string",
+                              "example": "English"
+                            }
+                          },
+                          "$schema": "http://json-schema.org/schema#",
+                          "type": "object"
+                        }
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      },
+                      "playbacks": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "enum": [
+                                "FLASH_192K_320X180",
+                                "FLASH_450K_400X224",
+                                "FLASH_1200K_640X360",
+                                "FLASH_1800K_960X540",
+                                "HTTP_CLOUD_MOBILE",
+                                "HTTP_CLOUD_TABLET",
+                                "HTTP_CLOUD_TABLET_60",
+                                "HTTP_CLOUD_WIRED",
+                                "HTTP_CLOUD_WIRED_60",
+                                "HTTP_CLOUD_WIRED_WEB"
+                              ]
+                            },
+                            "width": {
+                              "type": "string",
+                              "example": "960"
+                            },
+                            "height": {
+                              "type": "string",
+                              "example": "540"
+                            },
+                            "url": {
+                              "type": "string",
+                              "format": "video",
+                              "example": "http://md-akc.med.nhl.com/mp4/nhl/2018/02/11/ddec1fcc-3772-4769-a547-314de76c6c11/1518322152840/asset_1800k.mp4"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  }
+                }
+              },
+              "$schema": "http://json-schema.org/schema#",
+              "type": "object"
+            },
+            "gameCenter": {
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "example": "Highlights"
+                },
+                "topicList": {
+                  "type": "string",
+                  "example": "293642378"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "video"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2018-02-10T22:00:00-0500"
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "Goodrow buries Hansen's pass"
+                      },
+                      "blurb": {
+                        "type": "string",
+                        "example": "EDM@SJS: Goodrow snaps Hansen's pass by Montoya"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Barclay Goodrow takes a drop pass from Jannik Hansen and whips a quick wrist shot past Al Montoya to give the Sharks a 3-0 lead in the 2nd"
+                      },
+                      "duration": {
+                        "type": "string",
+                        "example": "00:51"
+                      },
+                      "authFlow": {
+                        "type": "boolean"
+                      },
+                      "mediaPlaybackId": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "mediaState": {
+                        "type": "string",
+                        "example": "MEDIA_ARCHIVE"
+                      },
+                      "keywords": {
+                        "type": "array",
+                        "items": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "bodyParagraphCount",
+                                "bodyWordCount",
+                                "clob_autoTagSkip_playerCards",
+                                "content",
+                                "embeddable",
+                                "gameId",
+                                "language",
+                                "playerId",
+                                "previewParagraphCount",
+                                "primaryTag",
+                                "previewWordCount",
+                                "shareable",
+                                "statsEventId",
+                                "teamFileCode",
+                                "teamId"
+                              ]
+                            },
+                            "value": {
+                              "type": "string",
+                              "example": "en"
+                            },
+                            "displayName": {
+                              "type": "string",
+                              "example": "English"
+                            }
+                          },
+                          "$schema": "http://json-schema.org/schema#",
+                          "type": "object"
+                        }
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      },
+                      "playbacks": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "enum": [
+                                "FLASH_192K_320X180",
+                                "FLASH_450K_400X224",
+                                "FLASH_1200K_640X360",
+                                "FLASH_1800K_960X540",
+                                "HTTP_CLOUD_MOBILE",
+                                "HTTP_CLOUD_TABLET",
+                                "HTTP_CLOUD_TABLET_60",
+                                "HTTP_CLOUD_WIRED",
+                                "HTTP_CLOUD_WIRED_60",
+                                "HTTP_CLOUD_WIRED_WEB"
+                              ]
+                            },
+                            "width": {
+                              "type": "string",
+                              "example": "960"
+                            },
+                            "height": {
+                              "type": "string",
+                              "example": "540"
+                            },
+                            "url": {
+                              "type": "string",
+                              "format": "video",
+                              "example": "http://md-akc.med.nhl.com/mp4/nhl/2018/02/11/ddec1fcc-3772-4769-a547-314de76c6c11/1518322152840/asset_1800k.mp4"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  }
+                }
+              },
+              "$schema": "http://json-schema.org/schema#",
+              "type": "object"
+            }
+          },
+          "$schema": "http://json-schema.org/schema#",
+          "type": "object"
+        },
+        "gameCenter": {
+          "properties": {
+            "scoreboard": {
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "example": "Highlights"
+                },
+                "topicList": {
+                  "type": "string",
+                  "example": "293642378"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "video"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2018-02-10T22:00:00-0500"
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "Goodrow buries Hansen's pass"
+                      },
+                      "blurb": {
+                        "type": "string",
+                        "example": "EDM@SJS: Goodrow snaps Hansen's pass by Montoya"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Barclay Goodrow takes a drop pass from Jannik Hansen and whips a quick wrist shot past Al Montoya to give the Sharks a 3-0 lead in the 2nd"
+                      },
+                      "duration": {
+                        "type": "string",
+                        "example": "00:51"
+                      },
+                      "authFlow": {
+                        "type": "boolean"
+                      },
+                      "mediaPlaybackId": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "mediaState": {
+                        "type": "string",
+                        "example": "MEDIA_ARCHIVE"
+                      },
+                      "keywords": {
+                        "type": "array",
+                        "items": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "bodyParagraphCount",
+                                "bodyWordCount",
+                                "clob_autoTagSkip_playerCards",
+                                "content",
+                                "embeddable",
+                                "gameId",
+                                "language",
+                                "playerId",
+                                "previewParagraphCount",
+                                "primaryTag",
+                                "previewWordCount",
+                                "shareable",
+                                "statsEventId",
+                                "teamFileCode",
+                                "teamId"
+                              ]
+                            },
+                            "value": {
+                              "type": "string",
+                              "example": "en"
+                            },
+                            "displayName": {
+                              "type": "string",
+                              "example": "English"
+                            }
+                          },
+                          "$schema": "http://json-schema.org/schema#",
+                          "type": "object"
+                        }
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      },
+                      "playbacks": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "enum": [
+                                "FLASH_192K_320X180",
+                                "FLASH_450K_400X224",
+                                "FLASH_1200K_640X360",
+                                "FLASH_1800K_960X540",
+                                "HTTP_CLOUD_MOBILE",
+                                "HTTP_CLOUD_TABLET",
+                                "HTTP_CLOUD_TABLET_60",
+                                "HTTP_CLOUD_WIRED",
+                                "HTTP_CLOUD_WIRED_60",
+                                "HTTP_CLOUD_WIRED_WEB"
+                              ]
+                            },
+                            "width": {
+                              "type": "string",
+                              "example": "960"
+                            },
+                            "height": {
+                              "type": "string",
+                              "example": "540"
+                            },
+                            "url": {
+                              "type": "string",
+                              "format": "video",
+                              "example": "http://md-akc.med.nhl.com/mp4/nhl/2018/02/11/ddec1fcc-3772-4769-a547-314de76c6c11/1518322152840/asset_1800k.mp4"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  }
+                }
+              },
+              "$schema": "http://json-schema.org/schema#",
+              "type": "object"
+            },
+            "gameCenter": {
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "example": "Highlights"
+                },
+                "topicList": {
+                  "type": "string",
+                  "example": "293642378"
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "video"
+                        ]
+                      },
+                      "id": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "date": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2018-02-10T22:00:00-0500"
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "Goodrow buries Hansen's pass"
+                      },
+                      "blurb": {
+                        "type": "string",
+                        "example": "EDM@SJS: Goodrow snaps Hansen's pass by Montoya"
+                      },
+                      "description": {
+                        "type": "string",
+                        "example": "Barclay Goodrow takes a drop pass from Jannik Hansen and whips a quick wrist shot past Al Montoya to give the Sharks a 3-0 lead in the 2nd"
+                      },
+                      "duration": {
+                        "type": "string",
+                        "example": "00:51"
+                      },
+                      "authFlow": {
+                        "type": "boolean"
+                      },
+                      "mediaPlaybackId": {
+                        "type": "string",
+                        "example": "57602103"
+                      },
+                      "mediaState": {
+                        "type": "string",
+                        "example": "MEDIA_ARCHIVE"
+                      },
+                      "keywords": {
+                        "type": "array",
+                        "items": {
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "bodyParagraphCount",
+                                "bodyWordCount",
+                                "clob_autoTagSkip_playerCards",
+                                "content",
+                                "embeddable",
+                                "gameId",
+                                "language",
+                                "playerId",
+                                "previewParagraphCount",
+                                "primaryTag",
+                                "previewWordCount",
+                                "shareable",
+                                "statsEventId",
+                                "teamFileCode",
+                                "teamId"
+                              ]
+                            },
+                            "value": {
+                              "type": "string",
+                              "example": "en"
+                            },
+                            "displayName": {
+                              "type": "string",
+                              "example": "English"
+                            }
+                          },
+                          "$schema": "http://json-schema.org/schema#",
+                          "type": "object"
+                        }
+                      },
+                      "image": {
+                        "properties": {
+                          "title": {
+                            "type": "string"
+                          },
+                          "altText": {
+                            "type": "string"
+                          },
+                          "cuts": {
+                            "type": "object",
+                            "properties": {
+                              "aspectRatio": {
+                                "type": "string",
+                                "example": "16:9"
+                              },
+                              "width": {
+                                "type": "number",
+                                "example": 2568
+                              },
+                              "height": {
+                                "type": "number",
+                                "example": 1444
+                              },
+                              "src": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at2x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              },
+                              "at3x": {
+                                "type": "string",
+                                "format": "url",
+                                "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                              }
+                            }
+                          }
+                        },
+                        "$schema": "http://json-schema.org/schema#",
+                        "type": "object"
+                      },
+                      "playbacks": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "enum": [
+                                "FLASH_192K_320X180",
+                                "FLASH_450K_400X224",
+                                "FLASH_1200K_640X360",
+                                "FLASH_1800K_960X540",
+                                "HTTP_CLOUD_MOBILE",
+                                "HTTP_CLOUD_TABLET",
+                                "HTTP_CLOUD_TABLET_60",
+                                "HTTP_CLOUD_WIRED",
+                                "HTTP_CLOUD_WIRED_60",
+                                "HTTP_CLOUD_WIRED_WEB"
+                              ]
+                            },
+                            "width": {
+                              "type": "string",
+                              "example": "960"
+                            },
+                            "height": {
+                              "type": "string",
+                              "example": "540"
+                            },
+                            "url": {
+                              "type": "string",
+                              "format": "video",
+                              "example": "http://md-akc.med.nhl.com/mp4/nhl/2018/02/11/ddec1fcc-3772-4769-a547-314de76c6c11/1518322152840/asset_1800k.mp4"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "$schema": "http://json-schema.org/schema#",
+                    "type": "object"
+                  }
+                }
+              },
+              "$schema": "http://json-schema.org/schema#",
+              "type": "object"
+            }
+          },
+          "$schema": "http://json-schema.org/schema#",
+          "type": "object"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

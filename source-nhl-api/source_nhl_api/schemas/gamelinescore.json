@@ -1,0 +1,258 @@
+{
+  "properties": {
+    "currentPeriod": {
+      "type": "number",
+      "example": 3
+    },
+    "currentPeriodOrdinal": {
+      "type": "string",
+      "example": "3rd"
+    },
+    "currentPeriodTimeRemaining": {
+      "type": "string",
+      "example": "Final"
+    },
+    "periods": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "periodType": {
+            "type": "string",
+            "example": "REGULAR"
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2018-02-11T03:09:50Z"
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2018-02-11T03:44:47Z"
+          },
+          "num": {
+            "type": "number",
+            "example": 1
+          },
+          "ordinalNum": {
+            "type": "string",
+            "example": "1st"
+          },
+          "home": {
+            "type": "object",
+            "properties": {
+              "goals": {
+                "type": "number",
+                "example": 2
+              },
+              "shotsOnGoal": {
+                "type": "number",
+                "example": 14
+              },
+              "rinkSide": {
+                "type": "string",
+                "example": "left"
+              }
+            }
+          },
+          "away": {
+            "type": "object",
+            "properties": {
+              "goals": {
+                "type": "number",
+                "example": 0
+              },
+              "shotsOnGoal": {
+                "type": "number",
+                "example": 9
+              },
+              "rinkSide": {
+                "type": "string",
+                "example": "right"
+              }
+            }
+          }
+        },
+        "$schema": "http://json-schema.org/schema#",
+        "type": "object"
+      }
+    },
+    "shootoutInfo": {
+      "type": "object",
+      "properties": {
+        "away": {
+          "type": "object",
+          "properties": {
+            "scores": {
+              "type": "number",
+              "example": 0
+            },
+            "attempts": {
+              "type": "number",
+              "example": 0
+            }
+          }
+        },
+        "home": {
+          "type": "object",
+          "properties": {
+            "scores": {
+              "type": "number",
+              "example": 0
+            },
+            "attempts": {
+              "type": "number",
+              "example": 0
+            }
+          }
+        }
+      }
+    },
+    "teams": {
+      "type": "object",
+      "properties": {
+        "home": {
+          "properties": {
+            "team": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "example": 28
+                },
+                "name": {
+                  "type": "string",
+                  "example": "San Jose Sharks"
+                },
+                "link": {
+                  "type": "string",
+                  "format": "uri",
+                  "example": "/api/v1/teams/28"
+                },
+                "abbreviation": {
+                  "type": "string",
+                  "example": "SJS"
+                },
+                "triCode": {
+                  "type": "string",
+                  "example": "SJS"
+                }
+              }
+            },
+            "goals": {
+              "type": "number",
+              "example": 6
+            },
+            "shotsOnGoal": {
+              "type": "number",
+              "example": 30
+            },
+            "goaliePulled": {
+              "type": "boolean"
+            },
+            "numSkaters": {
+              "type": "number",
+              "example": 5
+            },
+            "powerPlay": {
+              "type": "boolean"
+            }
+          },
+          "$schema": "http://json-schema.org/schema#",
+          "type": "object"
+        },
+        "away": {
+          "properties": {
+            "team": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "example": 28
+                },
+                "name": {
+                  "type": "string",
+                  "example": "San Jose Sharks"
+                },
+                "link": {
+                  "type": "string",
+                  "format": "uri",
+                  "example": "/api/v1/teams/28"
+                },
+                "abbreviation": {
+                  "type": "string",
+                  "example": "SJS"
+                },
+                "triCode": {
+                  "type": "string",
+                  "example": "SJS"
+                }
+              }
+            },
+            "goals": {
+              "type": "number",
+              "example": 6
+            },
+            "shotsOnGoal": {
+              "type": "number",
+              "example": 30
+            },
+            "goaliePulled": {
+              "type": "boolean"
+            },
+            "numSkaters": {
+              "type": "number",
+              "example": 5
+            },
+            "powerPlay": {
+              "type": "boolean"
+            }
+          },
+          "$schema": "http://json-schema.org/schema#",
+          "type": "object"
+        }
+      }
+    },
+    "powerPlayStrength": {
+      "type": "string",
+      "example": "Even"
+    },
+    "hasShootout": {
+      "type": "boolean"
+    },
+    "intermissionInfo": {
+      "type": "object",
+      "properties": {
+        "intermissionTimeRemaining": {
+          "type": "number",
+          "example": 0
+        },
+        "intermissionTimeElapsed": {
+          "type": "number",
+          "example": 0
+        },
+        "inIntermission": {
+          "type": "boolean"
+        }
+      }
+    },
+    "powerPlayInfo": {
+      "type": "object",
+      "properties": {
+        "situationTimeRemaining": {
+          "type": "number",
+          "example": 0
+        },
+        "situationTimeElapsed": {
+          "type": "number",
+          "example": 72
+        },
+        "inSituation": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

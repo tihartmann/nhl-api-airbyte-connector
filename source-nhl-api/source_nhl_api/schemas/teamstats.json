@@ -1,0 +1,182 @@
+{
+  "properties": {
+    "copyright": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "object",
+            "properties": {
+              "displayName": {
+                "type": "string",
+                "example": "statsSingleSeason"
+              }
+            }
+          },
+          "splits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "stat": {
+                  "type": "object",
+                  "properties": {
+                    "gamesPlayed": {
+                      "type": "number",
+                      "example": 55
+                    },
+                    "wins": {
+                      "type": "number",
+                      "example": 29
+                    },
+                    "losses": {
+                      "type": "number",
+                      "example": 18
+                    },
+                    "ot": {
+                      "type": "number",
+                      "example": 8
+                    },
+                    "pts": {
+                      "type": "number",
+                      "example": 66
+                    },
+                    "ptPctg": {
+                      "type": "string",
+                      "example": "60.0"
+                    },
+                    "goalsPerGame": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 2.891
+                    },
+                    "goalsAgainstPerGame": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 2.745
+                    },
+                    "evGGARatio": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.8532
+                    },
+                    "powerPlayPercentage": {
+                      "type": "string",
+                      "example": "23.9"
+                    },
+                    "powerPlayGoals": {
+                      "type": "number",
+                      "example": 44
+                    },
+                    "powerPlayGoalsAgainst": {
+                      "type": "number",
+                      "example": 26
+                    },
+                    "powerPlayOpportunities": {
+                      "type": "number",
+                      "example": 184
+                    },
+                    "penaltyKillPercentage": {
+                      "type": "string",
+                      "example": "84.6"
+                    },
+                    "shotsPerGame": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 32.8
+                    },
+                    "shotsAllowed": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 30.2182
+                    },
+                    "winScoreFirst": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.679
+                    },
+                    "winOppScoreFirst": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.37
+                    },
+                    "winLeadFirstPer": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.85
+                    },
+                    "winLeadSecondPer": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.952
+                    },
+                    "winOutshootOpp": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.467
+                    },
+                    "winOutshotByOpp": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.6
+                    },
+                    "faceOffsTaken": {
+                      "type": "number",
+                      "example": 3300
+                    },
+                    "faceOffsWon": {
+                      "type": "number",
+                      "example": 1675
+                    },
+                    "faceOffsLost": {
+                      "type": "number",
+                      "example": 1625
+                    },
+                    "faceOffWinPercentage": {
+                      "type": "string",
+                      "example": "50.8"
+                    },
+                    "shootingPctg": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 8.8
+                    },
+                    "savePctg": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 0.909
+                    }
+                  }
+                },
+                "team": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 28
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "San Jose Sharks"
+                    },
+                    "link": {
+                      "type": "string",
+                      "format": "uri",
+                      "example": "/api/v1/teams/28"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

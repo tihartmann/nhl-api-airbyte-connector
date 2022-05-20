@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "name": {
+      "type": "string",
+      "example": "SAP Center at San Jose"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "example": "/api/v1/venues/null"
+    },
+    "city": {
+      "type": "string",
+      "example": "San Jose"
+    },
+    "timeZone": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "America/Los_Angeles"
+        },
+        "offset": {
+          "type": "number",
+          "example": -8
+        },
+        "tz": {
+          "type": "string",
+          "example": "PST"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

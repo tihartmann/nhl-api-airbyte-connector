@@ -1,0 +1,182 @@
+{
+  "properties": {
+    "copyright": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "standingsType": {
+            "type": "string",
+            "enum": [
+              "regularSeason"
+            ]
+          },
+          "league": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 133
+              },
+              "name": {
+                "type": "string",
+                "example": "National Hockey League"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/league/133"
+              }
+            }
+          },
+          "division": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 15
+              },
+              "name": {
+                "type": "string",
+                "example": "Pacific"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/divisions/15"
+              }
+            }
+          },
+          "conference": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "number",
+                "example": 5
+              },
+              "name": {
+                "type": "string",
+                "example": "Western"
+              },
+              "link": {
+                "type": "string",
+                "format": "uri",
+                "example": "/api/v1/conferences/5"
+              }
+            }
+          },
+          "teamRecords": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "team": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 28
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "San Jose Sharks"
+                    },
+                    "link": {
+                      "type": "string",
+                      "format": "uri",
+                      "example": "/api/v1/teams/28"
+                    }
+                  }
+                },
+                "leagueRecord": {
+                  "type": "object",
+                  "properties": {
+                    "wins": {
+                      "type": "number",
+                      "example": 29
+                    },
+                    "losses": {
+                      "type": "number",
+                      "example": 18
+                    },
+                    "ot": {
+                      "type": "number",
+                      "example": 8
+                    },
+                    "type": {
+                      "type": "string",
+                      "example": "league"
+                    }
+                  }
+                },
+                "goalsAgainst": {
+                  "type": "number",
+                  "example": 154
+                },
+                "goalsScored": {
+                  "type": "number",
+                  "example": 162
+                },
+                "points": {
+                  "type": "number",
+                  "example": 66
+                },
+                "divisionRank": {
+                  "type": "string",
+                  "example": "2"
+                },
+                "conferenceRank": {
+                  "type": "string",
+                  "example": "7"
+                },
+                "leagueRank": {
+                  "type": "string",
+                  "example": "11"
+                },
+                "wildCardRank": {
+                  "type": "string",
+                  "example": "0"
+                },
+                "row": {
+                  "type": "number",
+                  "example": 26
+                },
+                "gamesPlayed": {
+                  "type": "number",
+                  "example": 55
+                },
+                "streak": {
+                  "type": "object",
+                  "properties": {
+                    "streakType": {
+                      "type": "string",
+                      "example": "wins"
+                    },
+                    "streakNumber": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "streakCode": {
+                      "type": "string",
+                      "example": "W1"
+                    }
+                  }
+                },
+                "lastUpdated": {
+                  "type": "string",
+                  "format": "date-time",
+                  "example": "2018-02-11T00:57:18Z"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

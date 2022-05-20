@@ -1,0 +1,182 @@
+{
+  "properties": {
+    "title": {
+      "type": "string",
+      "example": "Highlights"
+    },
+    "topicList": {
+      "type": "string",
+      "example": "293642378"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "video"
+            ]
+          },
+          "id": {
+            "type": "string",
+            "example": "57602103"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time",
+            "example": "2018-02-10T22:00:00-0500"
+          },
+          "title": {
+            "type": "string",
+            "example": "Goodrow buries Hansen's pass"
+          },
+          "blurb": {
+            "type": "string",
+            "example": "EDM@SJS: Goodrow snaps Hansen's pass by Montoya"
+          },
+          "description": {
+            "type": "string",
+            "example": "Barclay Goodrow takes a drop pass from Jannik Hansen and whips a quick wrist shot past Al Montoya to give the Sharks a 3-0 lead in the 2nd"
+          },
+          "duration": {
+            "type": "string",
+            "example": "00:51"
+          },
+          "authFlow": {
+            "type": "boolean"
+          },
+          "mediaPlaybackId": {
+            "type": "string",
+            "example": "57602103"
+          },
+          "mediaState": {
+            "type": "string",
+            "example": "MEDIA_ARCHIVE"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "bodyParagraphCount",
+                    "bodyWordCount",
+                    "clob_autoTagSkip_playerCards",
+                    "content",
+                    "embeddable",
+                    "gameId",
+                    "language",
+                    "playerId",
+                    "previewParagraphCount",
+                    "primaryTag",
+                    "previewWordCount",
+                    "shareable",
+                    "statsEventId",
+                    "teamFileCode",
+                    "teamId"
+                  ]
+                },
+                "value": {
+                  "type": "string",
+                  "example": "en"
+                },
+                "displayName": {
+                  "type": "string",
+                  "example": "English"
+                }
+              },
+              "$schema": "http://json-schema.org/schema#",
+              "type": "object"
+            }
+          },
+          "image": {
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "altText": {
+                "type": "string"
+              },
+              "cuts": {
+                "type": "object",
+                "properties": {
+                  "aspectRatio": {
+                    "type": "string",
+                    "example": "16:9"
+                  },
+                  "width": {
+                    "type": "number",
+                    "example": 2568
+                  },
+                  "height": {
+                    "type": "number",
+                    "example": 1444
+                  },
+                  "src": {
+                    "type": "string",
+                    "format": "url",
+                    "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                  },
+                  "at2x": {
+                    "type": "string",
+                    "format": "url",
+                    "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                  },
+                  "at3x": {
+                    "type": "string",
+                    "format": "url",
+                    "example": "https://nhl.bamcontent.com/images/photos/295824704/2568x1444/cut.jpg"
+                  }
+                }
+              }
+            },
+            "$schema": "http://json-schema.org/schema#",
+            "type": "object"
+          },
+          "playbacks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "enum": [
+                    "FLASH_192K_320X180",
+                    "FLASH_450K_400X224",
+                    "FLASH_1200K_640X360",
+                    "FLASH_1800K_960X540",
+                    "HTTP_CLOUD_MOBILE",
+                    "HTTP_CLOUD_TABLET",
+                    "HTTP_CLOUD_TABLET_60",
+                    "HTTP_CLOUD_WIRED",
+                    "HTTP_CLOUD_WIRED_60",
+                    "HTTP_CLOUD_WIRED_WEB"
+                  ]
+                },
+                "width": {
+                  "type": "string",
+                  "example": "960"
+                },
+                "height": {
+                  "type": "string",
+                  "example": "540"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "video",
+                  "example": "http://md-akc.med.nhl.com/mp4/nhl/2018/02/11/ddec1fcc-3772-4769-a547-314de76c6c11/1518322152840/asset_1800k.mp4"
+                }
+              }
+            }
+          }
+        },
+        "$schema": "http://json-schema.org/schema#",
+        "type": "object"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

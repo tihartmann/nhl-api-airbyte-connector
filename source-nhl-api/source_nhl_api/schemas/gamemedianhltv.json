@@ -1,0 +1,59 @@
+{
+  "properties": {
+    "title": {
+      "type": "string",
+      "example": "NHLTV"
+    },
+    "platform": {
+      "type": "string",
+      "example": "web"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "example": "dbb39fa8-6679-4b22-a8c5-71eb5e39b462"
+          },
+          "mediaState": {
+            "type": "string",
+            "example": "MEDIA_ARCHIVE"
+          },
+          "mediaPlaybackId": {
+            "type": "string",
+            "example": "57463703"
+          },
+          "mediaFeedType": {
+            "type": "string",
+            "example": "HOME"
+          },
+          "callLetters": {
+            "type": "string",
+            "example": "NBCS-CA"
+          },
+          "eventId": {
+            "type": "string",
+            "example": "221-1007449"
+          },
+          "language": {
+            "type": "string",
+            "example": "eng"
+          },
+          "freeGame": {
+            "type": "boolean"
+          },
+          "feedName": {
+            "type": "string"
+          },
+          "gamePlus": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

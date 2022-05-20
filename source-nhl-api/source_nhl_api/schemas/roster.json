@@ -1,0 +1,49 @@
+{
+  "properties": {
+    "person": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "example": 8466138
+        },
+        "fullName": {
+          "type": "string",
+          "example": "Joe Thornton"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "example": "/api/v1/people/8466138"
+        }
+      }
+    },
+    "jerseyNumber": {
+      "type": "number",
+      "example": 19
+    },
+    "position": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string",
+          "example": "C"
+        },
+        "name": {
+          "type": "string",
+          "example": "Center"
+        },
+        "type": {
+          "type": "string",
+          "example": "Forward"
+        },
+        "abbreviation": {
+          "type": "string",
+          "example": "C"
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

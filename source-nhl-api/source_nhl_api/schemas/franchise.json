@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "id": {
+      "type": "number",
+      "example": 29
+    },
+    "name": {
+      "type": "string",
+      "example": "Sharks"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "example": "/api/v1/franchises/29"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "id": {
+      "type": "number",
+      "example": 8477180
+    },
+    "fullName": {
+      "type": "string",
+      "example": "Aaron Dell"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "example": "/api/v1/people/8477180"
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

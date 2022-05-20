@@ -1,0 +1,97 @@
+{
+  "properties": {
+    "copyright": {
+      "type": "string"
+    },
+    "drafts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "draftYear": {
+            "type": "number",
+            "example": 2017
+          },
+          "rounds": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "roundNumber": {
+                  "type": "number",
+                  "example": 1
+                },
+                "round": {
+                  "type": "number",
+                  "example": "1"
+                },
+                "picks": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "year": {
+                        "type": "number",
+                        "example": 2017
+                      },
+                      "round": {
+                        "type": "string",
+                        "example": "1"
+                      },
+                      "pickOverall": {
+                        "type": "number",
+                        "example": 1
+                      },
+                      "pickInRound": {
+                        "type": "number",
+                        "example": 1
+                      },
+                      "team": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "example": 1
+                          },
+                          "name": {
+                            "type": "string",
+                            "example": "New Jersey Devils"
+                          },
+                          "link": {
+                            "type": "string",
+                            "format": "uri",
+                            "example": "/api/v1/teams/1"
+                          }
+                        }
+                      },
+                      "prospect": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "number",
+                            "example": 65242
+                          },
+                          "fullName": {
+                            "type": "string",
+                            "example": "Nico Hischier"
+                          },
+                          "link": {
+                            "type": "string",
+                            "format": "uri",
+                            "example": "/api/v1/draft/prospects/65242"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

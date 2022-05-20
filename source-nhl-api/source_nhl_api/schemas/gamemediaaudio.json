@@ -1,0 +1,51 @@
+{
+  "properties": {
+    "title": {
+      "type": "string",
+      "example": "Audio"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mediaState": {
+            "type": "string",
+            "example": "MEDIA_DONE"
+          },
+          "mediaPlaybackId": {
+            "type": "string",
+            "example": "57463903"
+          },
+          "mediaFeedType": {
+            "type": "string",
+            "example": "HOME"
+          },
+          "callLetters": {
+            "type": "string",
+            "example": "KFOX"
+          },
+          "eventId": {
+            "type": "string",
+            "example": "221-1007449"
+          },
+          "language": {
+            "type": "string",
+            "example": "eng"
+          },
+          "freeGame": {
+            "type": "boolean"
+          },
+          "feedName": {
+            "type": "string"
+          },
+          "gamePlus": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

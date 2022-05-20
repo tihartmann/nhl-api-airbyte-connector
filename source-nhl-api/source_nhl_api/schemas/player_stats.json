@@ -1,0 +1,324 @@
+{
+  "properties": {
+    "copyright": {
+      "type": "string"
+    },
+    "stats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "object",
+            "properties": {
+              "displayName": {
+                "type": "string",
+                "enum": [
+                  "byDayOfWeek",
+                  "byMonth",
+                  "goalsByGameSituation",
+                  "homeAndAway",
+                  "onPaceRegularSeason",
+                  "regularSeasonStatRankings",
+                  "statsSingleSeason",
+                  "vsConference",
+                  "vsDivision",
+                  "vsTeam",
+                  "winLoss"
+                ]
+              }
+            }
+          },
+          "splits": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "season": {
+                  "type": "string",
+                  "example": "20172018"
+                },
+                "stat": {
+                  "type": "object",
+                  "properties": {
+                    "timeOnIce": {
+                      "type": "string",
+                      "example": "862:13"
+                    },
+                    "assists": {
+                      "type": "string",
+                      "example": 23
+                    },
+                    "goals": {
+                      "type": "number",
+                      "example": 13
+                    },
+                    "pim": {
+                      "type": "number",
+                      "example": 38
+                    },
+                    "shots": {
+                      "type": "number",
+                      "example": 75
+                    },
+                    "games": {
+                      "type": "number",
+                      "example": 47
+                    },
+                    "hits": {
+                      "type": "number",
+                      "example": 32
+                    },
+                    "powerPlayGoals": {
+                      "type": "number",
+                      "example": 7
+                    },
+                    "powerPlayPoints": {
+                      "type": "number",
+                      "example": 18
+                    },
+                    "powerPlayTimeOnIce": {
+                      "type": "number",
+                      "example": "168:28"
+                    },
+                    "evenTimeOnIce": {
+                      "type": "number",
+                      "example": "692:50"
+                    },
+                    "penaltyMinutes": {
+                      "type": "number",
+                      "example": "38"
+                    },
+                    "faceOffPct": {
+                      "type": "number",
+                      "format": "double",
+                      "example": 52.04
+                    },
+                    "shotPct": {
+                      "type": "number",
+                      "format": "float",
+                      "example": 17.3
+                    },
+                    "gameWinningGoals": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "overTimeGoals": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "shortHandedGoals": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "shortHandedPoints": {
+                      "type": "number",
+                      "example": 0
+                    },
+                    "shortHandedTimeOnIce": {
+                      "type": "string",
+                      "example": "00:55"
+                    },
+                    "blocked": {
+                      "type": "number",
+                      "example": 18
+                    },
+                    "plusMinus": {
+                      "type": "number",
+                      "example": -9
+                    },
+                    "points": {
+                      "type": "number",
+                      "example": 36
+                    },
+                    "shifts": {
+                      "type": "number",
+                      "example": 1077
+                    },
+                    "timeOnIcePerGame": {
+                      "type": "string",
+                      "example": "18:20"
+                    },
+                    "evenTimeOnIcePerGame": {
+                      "type": "string",
+                      "example": "14:44"
+                    },
+                    "shortHandedTimeOnIcePerGame": {
+                      "type": "string",
+                      "example": "00:01"
+                    },
+                    "powerPlayTimeOnIcePerGame": {
+                      "type": "string",
+                      "example": "03:35"
+                    },
+                    "rankPowerPlayGoals": {
+                      "type": "string",
+                      "example": "1st"
+                    },
+                    "rankBlockedShots": {
+                      "type": "string",
+                      "example": "405th"
+                    },
+                    "rankAssists": {
+                      "type": "string",
+                      "example": "51st"
+                    },
+                    "rankShotPct": {
+                      "type": "string",
+                      "example": "246th"
+                    },
+                    "rankGoals": {
+                      "type": "string",
+                      "example": "13th"
+                    },
+                    "rankHits": {
+                      "type": "string",
+                      "example": "19th"
+                    },
+                    "rankPenaltyMinutes": {
+                      "type": "string",
+                      "example": "111th"
+                    },
+                    "rankShortHandedGoals": {
+                      "type": "string",
+                      "example": "133rd"
+                    },
+                    "rankPlusMinus": {
+                      "type": "string",
+                      "example": "176th"
+                    },
+                    "rankShots": {
+                      "type": "string",
+                      "example": "2nd"
+                    },
+                    "rankPoints": {
+                      "type": "string",
+                      "example": "20th"
+                    },
+                    "rankOvertimeGoals": {
+                      "type": "string",
+                      "example": "9th"
+                    },
+                    "rankGamesPlayed": {
+                      "type": "string",
+                      "example": "1st"
+                    },
+                    "goalsInFirstPeriod": {
+                      "type": "number",
+                      "example": 6
+                    },
+                    "goalsInSecondPeriod": {
+                      "type": "number",
+                      "example": 3
+                    },
+                    "goalsInThirdPeriod": {
+                      "type": "number",
+                      "example": 4
+                    },
+                    "goalsTrailingByOne": {
+                      "type": "number",
+                      "example": 2
+                    },
+                    "goalsTrailingByTwo": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "goalsTrailingByThreePlus": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "goalsWhenTied": {
+                      "type": "number",
+                      "example": 4
+                    },
+                    "goalsLeadingByOne": {
+                      "type": "number",
+                      "example": 2
+                    },
+                    "goalsLeadingByTwo": {
+                      "type": "number",
+                      "example": 3
+                    }
+                  }
+                },
+                "isHome": {
+                  "type": "boolean"
+                },
+                "isWin": {
+                  "type": "boolean"
+                },
+                "isOT": {
+                  "type": "boolean"
+                },
+                "month": {
+                  "type": "number",
+                  "example": 1
+                },
+                "dayOfWeek": {
+                  "type": "number",
+                  "example": 1
+                },
+                "opponent": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 1
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "New Jersey Devils"
+                    },
+                    "link": {
+                      "type": "string",
+                      "format": "uri",
+                      "example": "/api/v1/teams/1"
+                    }
+                  }
+                },
+                "opponentDivision": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 16
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Central"
+                    },
+                    "link": {
+                      "type": "string",
+                      "format": "uri",
+                      "example": "/api/v1/divisions/16"
+                    }
+                  }
+                },
+                "opponentConference": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number",
+                      "example": 5
+                    },
+                    "name": {
+                      "type": "string",
+                      "example": "Western"
+                    },
+                    "link": {
+                      "type": "string",
+                      "format": "uri",
+                      "example": "/api/v1/conferences/5"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}

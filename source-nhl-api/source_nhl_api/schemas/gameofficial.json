@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "official": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "example": 2071
+        },
+        "fullName": {
+          "type": "string",
+          "example": "Tim Peel"
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "example": "/api/v1/people/2071"
+        }
+      }
+    },
+    "officialType": {
+      "type": "string",
+      "enum": [
+        "Linesman",
+        "Referee"
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object"
+}
