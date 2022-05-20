@@ -6,7 +6,7 @@
 - Historic player stats for each player on each of the team rosters. 
 
 # Usage
-Clone the official [airbyte repository](https://github.com/airbytehq/airbyte) and dd the `source-nhl-api` folder to `airbyte/airbyte-integrations/connectors/`.
+Clone the official [airbyte repository](https://github.com/airbytehq/airbyte) and dd the `source-nhl-api` folder to `airbyte/airbyte-integrations/connectors/`. To use the connector locally or with Docker, follow the subsequent steps. For more detailed information on how to use the connector see [here](https://github.com/tihartmann/nhl-api-airbyte-connector/tree/main/source-nhl-api#readme).
 
 Run `cd airbyte/airbyte-integrations/connectors/` .
 
